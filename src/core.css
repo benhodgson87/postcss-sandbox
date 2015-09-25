@@ -1,2 +1,7 @@
+:root {
+    --body-font: sans-serif;
+}
+
 @import 'box-sizing';
+@import 'generic';
 @import 'flex';
