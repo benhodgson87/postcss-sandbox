@@ -7,8 +7,7 @@
     ],
     "input": "src/core.css",
     "output": "dist/core.css",
-    
     "autoprefixer": {
-        "browsers": "last 2 versions"
+        "browsers": ["> 2%", "last 2 versions", "IE >= 9"]
     }
 }
