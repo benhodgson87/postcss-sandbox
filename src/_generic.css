@@ -1,3 +1,11 @@
 body {
     font-family: var(--body-font);
 }
+
+.container {
+    margin: 0px;
+}
+
+.ben {
+    display: block;
+}
