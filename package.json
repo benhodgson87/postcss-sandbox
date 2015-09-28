@@ -3,11 +3,13 @@
   "version": "0.0.1",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
+    "postcss": "^5.0.8",
     "postcss-cli": "^2.1.0",
     "postcss-custom-properties": "^5.0.0",
     "postcss-partial-import": "^1.3.0"
   },
   "scripts": {
+    "css": "node postcss.js",
     "postcss": "postcss -c postcss.json"
   }
 }
