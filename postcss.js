@@ -10,8 +10,6 @@ var src = 'src/core.css',
 
 var css = fs.readFileSync(src, 'utf8');
 
-console.log(css);
-
 postcss([
     partialImport,
     customProperties,
