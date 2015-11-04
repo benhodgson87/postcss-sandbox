@@ -1,6 +1,7 @@
 var fs = require('fs'),
     postcss = require('postcss'),
     partialImport = require('postcss-partial-import')(),
+    importUrl = require('postcss-import-url'),
     customProperties = require('postcss-custom-properties')(),
     autoprefixer = require('autoprefixer')(),
     cssnano = require('cssnano')()
@@ -12,6 +13,7 @@ var css = fs.readFileSync(src, 'utf8');
 
 postcss([
     partialImport,
+    importUrl,
     customProperties,
     autoprefixer,
     cssnano
