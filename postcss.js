@@ -18,7 +18,10 @@ postcss([
 ])
 .process(css, {
     from: src,
-    to: dest
+    to: dest,
+    map: {
+        inline: false
+    }
 })
 .then(function (result) {
     fs.writeFileSync(dest, result.css);
