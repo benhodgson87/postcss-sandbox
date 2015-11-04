@@ -1,10 +1,10 @@
 var fs = require('fs'),
     postcss = require('postcss'),
-    partialImport = require('postcss-partial-import')(),
+    partialImport = require('postcss-partial-import'),
     importUrl = require('postcss-import-url'),
-    customProperties = require('postcss-custom-properties')(),
-    autoprefixer = require('autoprefixer')(),
-    cssnano = require('cssnano')()
+    customProperties = require('postcss-custom-properties'),
+    autoprefixer = require('autoprefixer'),
+    cssnano = require('cssnano')
 
 var src = 'src/core.css',
     dest = 'dist/core.css';
@@ -15,7 +15,9 @@ postcss([
     partialImport,
     importUrl,
     customProperties,
-    autoprefixer,
+    autoprefixer({
+        browsers: ['> 2%', 'last 2 versions', 'ie >= 9']
+    }),
     cssnano
 ])
 .process(css, {
