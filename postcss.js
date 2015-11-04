@@ -4,7 +4,7 @@ var fs = require('fs'),
     importUrl = require('postcss-import-url'),
     customProperties = require('postcss-custom-properties'),
     autoprefixer = require('autoprefixer'),
-    cssnano = require('cssnano')
+    cssnano = require('cssnano');
 
 var src = 'src/core.css',
     dest = 'dist/core.css';
