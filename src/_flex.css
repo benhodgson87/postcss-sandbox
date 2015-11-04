@@ -1,3 +1,16 @@
 .flex {
     display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.flex__positioner {
+    display: flex;
+    align-items: center;
+    box-pack: center;
+    flex: 1 0 auto;
+}
+
+.flex__content {
+    margin: auto;
 }
